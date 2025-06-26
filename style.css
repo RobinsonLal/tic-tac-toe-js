@@ -11,12 +11,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 10vmin;
 }
 
 .main-container {
   height: 60vmin;
   width: 60vmin;
-  margin-top: 20px;
+  margin-top: 5vmin;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,8 +25,15 @@ body {
   gap: 1.5vmin;
 }
 
+.msg {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 5vmin;
+  color: #ffb703;
+}
+
 h2 {
-  margin-top: 50px;
+  margin-top: 8vmin;
 }
 
 .box {
@@ -39,17 +47,21 @@ h2 {
 }
 
 .reset-btn {
-  margin-top: 50px;
+  margin-top: 5vmin;
   padding: 10px 50px;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .new-btn {
-  margin-top: 50px;
+  margin-top: 5vmin;
   padding: 10px 50px;
   border: none;
   border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .winner {

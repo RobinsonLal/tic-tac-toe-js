@@ -1,9 +1,9 @@
 
-const boxes = document.querySelectorAll('.box')
-const restartBtn = document.querySelector('.reset-btn')
-const newGameBtn = document.querySelector('.new-btn')
-const msgContainer = document.querySelector('.msg-container')
-const msg = document.querySelector('.msg')
+const boxes = document.querySelectorAll('.box');
+const resetBtn = document.querySelector('.reset-btn');
+const newBtn = document.querySelector('.new-btn')
+const msgContainer = document.querySelector('.msg-container');
+const msg = document.querySelector('.msg');
 
 let turnO = true;
 
@@ -28,14 +28,13 @@ const resetGame = () => {
 boxes.forEach((box) => {
     box.addEventListener('click', () => {
         if (turnO) {
-            box.innerText = "O"
+            box.innerText = "O";
             turnO = false;
         } else {
-            box.innerText = "X"
+            box.innerText = "X";
             turnO = true;
         }
         box.disabled = true;
-
         checkWinner();
     })
 })
@@ -54,8 +53,8 @@ const enableBoxes = () => {
 }
 
 const showWinner = (winner) => {
-    msg.innerText = `Congartulations the winner is player ${winner}`
-    msgContainer.classList.remove('hide')
+    msg.innerText = `Congartulation the winner is player ${winner}`
+    msgContainer.classList.remove('hide');
     disableBoxes();
 }
 
@@ -67,12 +66,11 @@ const checkWinner = () => {
 
         if (pos1Val != "", pos2Val != "", pos3Val != "") {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
-                console.log("winner", pos1Val);
                 showWinner(pos1Val);
             }
         }
     }
 }
 
-newGameBtn.addEventListener('click', resetGame);
-restartBtn.addEventListener('click', resetGame)
+newBtn.addEventListener('click', resetGame);
+resetBtn.addEventListener('click', resetGame);
