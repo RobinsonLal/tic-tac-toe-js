@@ -1,7 +1,6 @@
-
 const boxes = document.querySelectorAll('.box');
 const resetBtn = document.querySelector('.reset-btn');
-const newBtn = document.querySelector('.new-btn')
+const newBtn = document.querySelector('.new-btn');
 const msgContainer = document.querySelector('.msg-container');
 const msg = document.querySelector('.msg');
 
